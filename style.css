@@ -222,3 +222,17 @@ body {
   color: #4a3a8a;
   font-size: 14px;
 }
+/* NAVBAR — Réduction du texte et du padding */
+.navbar nav a {
+    font-size: 0.85rem;      /* Taille du texte réduite */
+    padding: 6px 10px;       /* Moins d'espace autour */
+    letter-spacing: 0.5px;   /* Plus compact */
+}
+
+.navbar {
+    height: 55px;            /* Navbar un peu plus fine */
+}
+
+.navbar .logo {
+    font-size: 1.1rem;       /* Logo légèrement réduit */
+}
