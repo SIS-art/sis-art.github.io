@@ -1,252 +1,184 @@
-/* ----------------------------------------------------
-   🌈 STYLE GLOBAL — Clair Cyber Tech Premium
-   Dégradé bleu → violet + Néon mix bleu/violet
----------------------------------------------------- */
+/* ------------------------------
+   BASE
+--------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #dbe8ff, #e8d9ff);
-  color: #1a1a2e;
-  overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #dfe7ff, #e8d9ff);
+    color: #222;
+    overflow-x: hidden;
 }
 
-/* Overlay légère */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255,255,255,0.25);
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* ----------------------------------------------------
-   🌐 NAVBAR PREMIUM — Dégradé + Icônes Néon Mix
----------------------------------------------------- */
-
+/* ------------------------------
+   NAVBAR
+--------------------------------*/
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  background: linear-gradient(90deg, rgba(120,0,255,0.25), rgba(0,120,255,0.25));
-  backdrop-filter: blur(12px);
-
-  border-bottom: 2px solid rgba(120,0,255,0.35);
-  box-shadow: 0 4px 20px rgba(120,0,255,0.25);
-
-  z-index: 10;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
 }
 
 .logo {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  background: linear-gradient(90deg, #7f4dff, #4db8ff);
-  -webkit-background-clip: text;
-  color: transparent;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #4a2cff;
 }
 
 .logo-dot {
-  color: #4db8ff;
+    color: #9b4dff;
+}
+
+/* MENU ALIGNÉ À GAUCHE + TAILLE RÉDUITE */
+.navbar nav {
+    display: flex;
+    gap: 18px;
+    margin-left: -60px; /* DÉCALAGE GAUCHE OPTIMAL */
 }
 
 .navbar nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 17px;
-
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-
-  color: #3a2a6a;
-  transition: 0.3s;
-}
-
-/* Icônes néon mix bleu/violet */
-.navbar nav a::before {
-  font-size: 20px;
-  content: attr(data-icon);
-  background: linear-gradient(90deg, #7f4dff, #4db8ff);
-  -webkit-background-clip: text;
-  color: transparent;
-  text-shadow: 0 0 8px rgba(120,0,255,0.6);
+    font-size: 0.85rem; /* TEXTE RÉDUIT */
+    padding: 6px 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.2s;
 }
 
 .navbar nav a:hover,
 .navbar nav a.active {
-  color: #7f4dff;
-  text-shadow: 0 0 10px rgba(120,0,255,0.6);
+    color: #7b2cff;
+    text-shadow: 0 0 6px #b58dff;
 }
 
-/* ----------------------------------------------------
-   🏠 TITRES
----------------------------------------------------- */
+/* ------------------------------
+   PAGE D’ACCUEIL (RÉDUITE)
+--------------------------------*/
+.hero {
+    padding-top: 110px; /* Réduit */
+    padding-bottom: 60px; /* Réduit */
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.85;
+}
+
+/* BOUTON PHOTO */
+.photo-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 28px;
+    border-radius: 50px;
+    background: #ffffffaa;
+    backdrop-filter: blur(6px);
+    border: 1px solid #c8baff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.photo-btn:hover {
+    background: #f3eaff;
+    box-shadow: 0 0 12px #c8baff;
+}
+
+/* ------------------------------
+   CARTES / SECTIONS
+--------------------------------*/
+.neon-card {
+    background: #ffffffcc;
+    border: 1px solid #d8caff;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 0 10px #e3d4ff;
+    backdrop-filter: blur(6px);
+}
 
 .page-title {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 42px;
-  text-align: center;
-  margin-top: 140px;
-  margin-bottom: 40px;
-
-  background: linear-gradient(90deg, #7f4dff, #4db8ff);
-  -webkit-background-clip: text;
-  color: transparent;
-
-  text-shadow: 0 0 12px rgba(120,0,255,0.4);
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
-/* ----------------------------------------------------
-   🧑‍💻 HERO (Accueil)
----------------------------------------------------- */
-
-.hero {
-  margin-top: 140px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 40px;
-}
-
-.hero-photo-wrapper {
-  position: relative;
-  width: 180px;
-  height: 180px;
-  margin: 0 auto 20px;
-}
-
-.hero-photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #7f4dff;
-  box-shadow: 0 0 15px rgba(120,0,255,0.5);
-}
-
-.hero-title {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 40px;
-  margin: 10px 0;
-  background: linear-gradient(90deg, #7f4dff, #4db8ff);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.hero-subtitle {
-  font-size: 20px;
-  color: #4a3a8a;
-  margin-bottom: 20px;
-}
-
-.hero-intro {
-  max-width: 600px;
-  margin: 0 auto 30px;
-  line-height: 1.6;
-  color: #3a2a6a;
-}
-
-/* ----------------------------------------------------
-   🔳 CARTES PREMIUM
----------------------------------------------------- */
-
-.neon-card {
-  background: rgba(255,255,255,0.6);
-  padding: 25px;
-  border-radius: 12px;
-
-  border: 2px solid rgba(120,0,255,0.35);
-  box-shadow: 0 0 15px rgba(120,0,255,0.25);
-
-  transition: 0.3s;
-}
-
-.neon-card:hover {
-  box-shadow: 0 0 25px rgba(120,0,255,0.45);
-  transform: translateY(-5px);
-}
-
-/* ----------------------------------------------------
-   📄 FORMULAIRE CONTACT
----------------------------------------------------- */
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0 15px;
-  border-radius: 8px;
-  border: 1px solid rgba(120,0,255,0.3);
-  background: rgba(255,255,255,0.8);
-  color: #1a1a2e;
-}
-
-.contact-form button {
-  width: 100%;
-}
-
-/* ----------------------------------------------------
-   📌 GRILLES
----------------------------------------------------- */
-
-.skills-grid,
+/* ------------------------------
+   GRILLES
+--------------------------------*/
 .projects-grid,
-.contact-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  padding: 40px;
-  max-width: 1100px;
-  margin: auto;
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
-/* ----------------------------------------------------
-   🦶 FOOTER
----------------------------------------------------- */
+.gallery-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #d8caff;
+    transition: 0.3s;
+}
 
+.gallery-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #b58dff;
+}
+
+/* ------------------------------
+   BOUTONS
+--------------------------------*/
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn.primary {
+    background: #7b2cff;
+    color: white;
+}
+
+.btn.primary:hover {
+    background: #9b4dff;
+    box-shadow: 0 0 10px #c8a6ff;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
 .footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  color: #4a3a8a;
-  font-size: 14px;
-}
-/* NAVBAR — Réduction du texte et du padding */
-.navbar nav a {
-    font-size: 0.85rem;      /* Taille du texte réduite */
-    padding: 6px 10px;       /* Moins d'espace autour */
-    letter-spacing: 0.5px;   /* Plus compact */
-}
-
-.navbar {
-    height: 55px;            /* Navbar un peu plus fine */
-}
-
-.navbar .logo {
-    font-size: 1.1rem;       /* Logo légèrement réduit */
-}
-/* Décaler le menu vers la gauche */
-.navbar nav {
-    margin-left: -55px;   /* Valeur à ajuster si tu veux plus ou moins */
-}
-/* Réduction de la hauteur de la section d'accueil */
-.hero {
-    padding-top: 80px;     /* Avant : souvent 120px ou plus */
-    padding-bottom: 60px;  /* Réduit pour compacter */
-}
-
-.hero .intro-text {
-    max-width: 650px;      /* Texte plus compact */
-    font-size: 1rem;       /* Légèrement plus petit */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    opacity: 0.7;
+    font-size: 0.9rem;
 }
