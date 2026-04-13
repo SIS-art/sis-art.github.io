@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projets — I.Simona SANDOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body class="projects-page">
+  <!-- Fond 3D réseau -->
+  <canvas id="bg-network"></canvas>
+  <div class="overlay"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">SIS-art<span class="logo-dot">.</span></div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html" class="active">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1 class="page-title glitch">Mes Projets</h1>
+
+    <section class="projects-grid">
+
+      <div class="project-card neon-card">
+        <h2>Active Directory + DNS + DHCP</h2>
+        <p>Installation complète d’un domaine Windows Server avec gestion des utilisateurs, GPO, DNS interne et DHCP configuré.</p>
+      </div>
+
+      <div class="project-card neon-card">
+        <h2>Déploiement Windows — WDS / MDT</h2>
+        <p>Création d’un serveur MDT, configuration de WinPE, Task Sequence, Unattend.xml et déploiement automatisé de Windows 11.</p>
+      </div>
+
+      <div class="project-card neon-card">
+        <h2>FOG Project</h2>
+        <p>Installation d’un serveur FOG sous Debian, capture d’image, déploiement PXE, configuration réseau et tests clients.</p>
+      </div>
+
+      <div class="project-card neon-card">
+        <h2>VPN — OpenVPN & WireGuard</h2>
+        <p>Création d’un réseau sécurisé, configuration serveur/client, certificats, routage et tests de connectivité.</p>
+      </div>
+
+      <div class="project-card neon-card">
+        <h2>Zabbix</h2>
+        <p>Installation, configuration des agents, création de dashboards, alertes et supervision réseau/systèmes.</p>
+      </div>
+
+      <div class="project-card neon-card">
+        <h2>GLPI</h2>
+        <p>Installation complète, base MariaDB, configuration des entités, tickets, inventaire et accès web.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 — I.Simona SANDOR — IT Support & Infrastructure</span>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="background-network.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
