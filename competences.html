@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Compétences — I.Simona SANDOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body class="skills-page">
+  <!-- Fond 3D réseau -->
+  <canvas id="bg-network"></canvas>
+  <div class="overlay"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">SIS-art<span class="logo-dot">.</span></div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="competences.html" class="active">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1 class="page-title glitch">Mes Compétences</h1>
+
+    <section class="skills-grid">
+
+      <div class="skill-card neon-card">
+        <h2>Systèmes</h2>
+        <ul>
+          <li>Windows Server (AD DS, DNS, DHCP)</li>
+          <li>Linux (Debian, Ubuntu)</li>
+          <li>Gestion utilisateurs & GPO</li>
+          <li>Scripts PowerShell & Bash</li>
+        </ul>
+      </div>
+
+      <div class="skill-card neon-card">
+        <h2>Réseaux</h2>
+        <ul>
+          <li>VLAN, routage, DHCP</li>
+          <li>Switching & Firewall</li>
+          <li>VPN (OpenVPN, WireGuard)</li>
+          <li>Analyse réseau & supervision</li>
+        </ul>
+      </div>
+
+      <div class="skill-card neon-card">
+        <h2>Virtualisation</h2>
+        <ul>
+          <li>VMware Workstation</li>
+          <li>VirtualBox</li>
+          <li>Snapshots & templates</li>
+          <li>Environnements de test complets</li>
+        </ul>
+      </div>
+
+      <div class="skill-card neon-card">
+        <h2>Cybersécurité</h2>
+        <ul>
+          <li>Durcissement systèmes</li>
+          <li>Gestion des accès</li>
+          <li>Surveillance & alertes</li>
+          <li>Bonnes pratiques sécurité</li>
+        </ul>
+      </div>
+
+      <div class="skill-card neon-card">
+        <h2>Déploiement</h2>
+        <ul>
+          <li>WDS / MDT</li>
+          <li>FOG Project</li>
+          <li>WinPE / Task Sequence</li>
+          <li>Automatisation installation Windows</li>
+        </ul>
+      </div>
+
+      <div class="skill-card neon-card">
+        <h2>Outils Pro</h2>
+        <ul>
+          <li>Zabbix</li>
+          <li>GLPI</li>
+          <li>pfSense</li>
+          <li>Wireshark</li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 — I.Simona SANDOR — IT Support & Infrastructure</span>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="background-network.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
