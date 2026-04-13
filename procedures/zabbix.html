@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Procédure Zabbix — I.Simona SANDOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../animations.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body class="procedure-page">
+  <canvas id="bg-network"></canvas>
+  <div class="overlay"></div>
+
+  <!-- NAVBAR PREMIUM -->
+  <header class="navbar">
+    <div class="logo">SIS-art<span class="logo-dot">.</span></div>
+    <nav>
+      <a href="../index.html" data-icon="🏠">Accueil</a>
+      <a href="../competences.html" data-icon="🧠">Compétences</a>
+      <a href="../projets.html" data-icon="📁">Projets</a>
+      <a href="../procedures.html" class="active" data-icon="📚">Procédures</a>
+      <a href="../galerie.html" data-icon="🖼️">Galerie</a>
+      <a href="../contact.html" data-icon="✉️">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1 class="page-title">Procédure : Zabbix</h1>
+
+    <section class="neon-card">
+      <h2>Objectif</h2>
+      <p>Installer et configurer Zabbix pour superviser un réseau, des serveurs et des postes clients.</p>
+    </section>
+
+    <section class="neon-card">
+      <h2>Étapes principales</h2>
+      <ol>
+        <li>Installation du serveur Zabbix</li>
+        <li>Installation de MariaDB</li>
+        <li>Configuration de la base de données</li>
+        <li>Installation de l’interface web Zabbix</li>
+        <li>Installation des agents Zabbix sur les machines</li>
+        <li>Ajout des hôtes dans Zabbix</li>
+        <li>Création des dashboards</li>
+        <li>Configuration des alertes</li>
+        <li>Tests de supervision</li>
+      </ol>
+    </section>
+
+    <section class="neon-card">
+      <h2>Captures & Preuves</h2>
+      <p>Retrouvez toutes les preuves techniques dans la galerie dédiée :</p>
+      <a href="../galerie/zabbix.html" class="btn primary">Voir la galerie Zabbix</a>
+    </section>
+
+    <section class="neon-card">
+      <h2>Documents</h2>
+      <p>Tu peux ajouter ici :</p>
+      <ul>
+        <li>PDF</li>
+        <li>Captures d’écran</li>
+        <li>Schémas réseau</li>
+        <li>Notes techniques</li>
+      </ul>
+      <p>Il suffit d’uploader tes fichiers dans le dossier <strong>/procedures/zabbix/</strong>.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    © 2026 — I.Simona SANDOR — IT Support & Infrastructure
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="../background-network.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
