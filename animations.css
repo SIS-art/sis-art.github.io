@@ -1,0 +1,105 @@
+/* ------------------------------
+   ANIMATIONS GLOBALES
+------------------------------ */
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(120, 0, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(120, 0, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(120, 0, 255, 0.4);
+  }
+}
+
+@keyframes neonText {
+  0% {
+    text-shadow: 0 0 5px #7f4dff, 0 0 10px #7f4dff;
+  }
+  50% {
+    text-shadow: 0 0 15px #7f4dff, 0 0 25px #4db8ff;
+  }
+  100% {
+    text-shadow: 0 0 5px #7f4dff, 0 0 10px #7f4dff;
+  }
+}
+
+/* ------------------------------
+   GLITCH EFFECT
+------------------------------ */
+
+.glitch {
+  position: relative;
+  display: inline-block;
+  animation: neonText 2s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+
+.glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 #ff00c8;
+  animation: glitchMove 0.3s infinite;
+}
+
+.glitch::after {
+  left: -2px;
+  text-shadow: -2px 0 #00eaff;
+  animation: glitchMove2 0.3s infinite;
+}
+
+@keyframes glitchMove {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes glitchMove2 {
+  0% { transform: translate(0); }
+  20% { transform: translate(2px, -2px); }
+  40% { transform: translate(2px, 2px); }
+  60% { transform: translate(-2px, -2px); }
+  80% { transform: translate(-2px, 2px); }
+  100% { transform: translate(0); }
+}
+
+/* ------------------------------
+   HOVER ANIMATIONS
+------------------------------ */
+
+.neon-card:hover {
+  animation: glowPulse 1.5s infinite;
+}
+
+.btn:hover {
+  animation: glowPulse 1.5s infinite;
+}
+
+/* ------------------------------
+   FADE-IN ANIMATIONS
+------------------------------ */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInMove 1s forwards;
+}
+
+@keyframes fadeInMove {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
