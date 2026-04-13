@@ -238,5 +238,15 @@ body {
 }
 /* Décaler le menu vers la gauche */
 .navbar nav {
-    margin-left: -20px;   /* Valeur à ajuster si tu veux plus ou moins */
+    margin-left: -55px;   /* Valeur à ajuster si tu veux plus ou moins */
+}
+/* Réduction de la hauteur de la section d'accueil */
+.hero {
+    padding-top: 80px;     /* Avant : souvent 120px ou plus */
+    padding-bottom: 60px;  /* Réduit pour compacter */
+}
+
+.hero .intro-text {
+    max-width: 650px;      /* Texte plus compact */
+    font-size: 1rem;       /* Légèrement plus petit */
 }
