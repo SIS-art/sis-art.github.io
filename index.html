@@ -1,28 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio Simona - TSSR</title>
-  <style>
-    body {
-      background: #0a0a0a;
-      color: #e0e0e0;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 100px;
-    }
-    h1 {
-      color: #7f5af0;
-      font-size: 3rem;
-    }
-    p {
-      font-size: 1.2rem;
-      opacity: 0.8;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Portfolio I.Simona SANDOR - IT Support & Infrastructure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Style principal -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
 </head>
-<body>
-  <h1>Portfolio de Simona</h1>
-  <p>Site en construction — version test.</p>
+<body class="home-page">
+  <!-- Fond 3D (grille) -->
+  <canvas id="bg-grid"></canvas>
+
+  <!-- Overlay sombre -->
+  <div class="overlay"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">SIS-art<span class="logo-dot">.</span></div>
+    <nav>
+      <a href="index.html" class="active">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Section Hero -->
+  <main class="hero">
+    <section class="hero-content">
+      <div class="hero-photo-wrapper">
+        <img src="photo.jpg" alt="Photo de I.Simona SANDOR" class="hero-photo" />
+        <div class="photo-glow"></div>
+      </div>
+
+      <div class="hero-text">
+        <h1 class="hero-title glitch">
+          I.Simona <span>SANDOR</span>
+        </h1>
+        <h2 class="hero-subtitle">IT Support &amp; Infrastructure</h2>
+
+        <p class="hero-intro">
+          Technicienne systèmes &amp; réseaux en formation TSSR, passionnée par
+          l’infrastructure, la virtualisation, la cybersécurité et le support
+          utilisateur. Je conçois, déploie et documente des environnements
+          techniques complets, avec une approche rigoureuse et professionnelle.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="competences.html" class="btn primary">Voir mes compétences</a>
+          <a href="projets.html" class="btn secondary">Découvrir mes projets</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span>© 2026 — I.Simona SANDOR — IT Support &amp; Infrastructure</span>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+
+  <!-- Scripts custom -->
+  <script src="background-grid.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
