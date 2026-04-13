@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact — I.Simona SANDOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body class="contact-page">
+  <!-- Fond 3D réseau -->
+  <canvas id="bg-network"></canvas>
+  <div class="overlay"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">SIS-art<span class="logo-dot">.</span></div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1 class="page-title glitch">Me Contacter</h1>
+
+    <section class="contact-section">
+
+      <div class="contact-card neon-card">
+        <h2>Formulaire de contact</h2>
+
+        <form class="contact-form">
+          <label>Nom</label>
+          <input type="text" placeholder="Votre nom" required />
+
+          <label>Email</label>
+          <input type="email" placeholder="Votre email" required />
+
+          <label>Message</label>
+          <textarea placeholder="Votre message..." required></textarea>
+
+          <button type="submit" class="btn primary">Envoyer</button>
+        </form>
+      </div>
+
+      <div class="contact-info neon-card">
+        <h2>Informations</h2>
+        <p><strong>Nom :</strong> I.Simona SANDOR</p>
+        <p><strong>Domaine :</strong> IT Support & Infrastructure</p>
+        <p><strong>Email :</strong> contact@example.com</p>
+        <p><strong>GitHub :</strong> <a href="https://github.com/SIS-art" target="_blank">github.com/SIS-art</a></p>
+        <p><strong>LinkedIn :</strong> (à ajouter si tu veux)</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 — I.Simona SANDOR — IT Support & Infrastructure</span>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="background-network.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
