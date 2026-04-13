@@ -236,3 +236,7 @@ body {
 .navbar .logo {
     font-size: 1.1rem;       /* Logo légèrement réduit */
 }
+/* Décaler le menu vers la gauche */
+.navbar nav {
+    margin-left: -20px;   /* Valeur à ajuster si tu veux plus ou moins */
+}
