@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Procédure GLPI — I.Simona SANDOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../animations.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body class="procedure-page">
+  <canvas id="bg-network"></canvas>
+  <div class="overlay"></div>
+
+  <!-- NAVBAR PREMIUM -->
+  <header class="navbar">
+    <div class="logo">SIS-art<span class="logo-dot">.</span></div>
+    <nav>
+      <a href="../index.html" data-icon="🏠">Accueil</a>
+      <a href="../competences.html" data-icon="🧠">Compétences</a>
+      <a href="../projets.html" data-icon="📁">Projets</a>
+      <a href="../procedures.html" class="active" data-icon="📚">Procédures</a>
+      <a href="../galerie.html" data-icon="🖼️">Galerie</a>
+      <a href="../contact.html" data-icon="✉️">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1 class="page-title">Procédure : GLPI</h1>
+
+    <section class="neon-card">
+      <h2>Objectif</h2>
+      <p>Installer et configurer GLPI pour la gestion des tickets, des utilisateurs, de l’inventaire et des équipements.</p>
+    </section>
+
+    <section class="neon-card">
+      <h2>Étapes principales</h2>
+      <ol>
+        <li>Installation de Debian / Ubuntu</li>
+        <li>Installation de MariaDB</li>
+        <li>Création de la base GLPI</li>
+        <li>Installation de GLPI</li>
+        <li>Configuration de l’interface web</li>
+        <li>Création des entités</li>
+        <li>Gestion des utilisateurs</li>
+        <li>Configuration des tickets</li>
+        <li>Installation de l’agent GLPI Inventory</li>
+        <li>Inventaire automatique</li>
+      </ol>
+    </section>
+
+    <section class="neon-card">
+      <h2>Captures & Preuves</h2>
+      <p>Retrouvez toutes les preuves techniques dans la galerie dédiée :</p>
+      <a href="../galerie/glpi.html" class="btn primary">Voir la galerie GLPI</a>
+    </section>
+
+    <section class="neon-card">
+      <h2>Documents</h2>
+      <p>Tu peux ajouter ici :</p>
+      <ul>
+        <li>PDF</li>
+        <li>Captures d’écran</li>
+        <li>Schémas réseau</li>
+        <li>Notes techniques</li>
+      </ul>
+      <p>Il suffit d’uploader tes fichiers dans le dossier <strong>/procedures/glpi/</strong>.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    © 2026 — I.Simona SANDOR — IT Support & Infrastructure
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="../background-network.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
