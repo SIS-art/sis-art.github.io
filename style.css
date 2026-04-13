@@ -44,7 +44,7 @@ header p {
 nav {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     padding: 15px 0;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
