@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Procédures — I.Simona SANDOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body class="procedures-page">
+  <!-- Fond 3D -->
+  <canvas id="bg-network"></canvas>
+  <div class="overlay"></div>
+
+  <!-- NAVBAR PREMIUM -->
+  <header class="navbar">
+    <div class="logo">SIS-art<span class="logo-dot">.</span></div>
+    <nav>
+      <a href="index.html" data-icon="🏠">Accueil</a>
+      <a href="competences.html" data-icon="🧠">Compétences</a>
+      <a href="projets.html" data-icon="📁">Projets</a>
+      <a href="procedures.html" class="active" data-icon="📚">Procédures</a>
+      <a href="galerie.html" data-icon="🖼️">Galerie</a>
+      <a href="contact.html" data-icon="✉️">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1 class="page-title">Procédures Techniques</h1>
+
+    <section class="projects-grid">
+
+      <div class="neon-card">
+        <h2>Active Directory</h2>
+        <p>Installation, configuration, utilisateurs, GPO, DNS, DHCP.</p>
+        <a href="procedures/ad.html" class="btn primary">Voir la procédure</a>
+      </div>
+
+      <div class="neon-card">
+        <h2>WDS / MDT</h2>
+        <p>Déploiement automatisé de Windows 11, WinPE, Task Sequence.</p>
+        <a href="procedures/mdt.html" class="btn primary">Voir la procédure</a>
+      </div>
+
+      <div class="neon-card">
+        <h2>FOG Project</h2>
+        <p>Capture, déploiement PXE, configuration Debian + FOG.</p>
+        <a href="procedures/fog.html" class="btn primary">Voir la procédure</a>
+      </div>
+
+      <div class="neon-card">
+        <h2>VPN</h2>
+        <p>OpenVPN, WireGuard, certificats, routage, sécurité.</p>
+        <a href="procedures/vpn.html" class="btn primary">Voir la procédure</a>
+      </div>
+
+      <div class="neon-card">
+        <h2>Zabbix</h2>
+        <p>Installation, agents, dashboards, alertes.</p>
+        <a href="procedures/zabbix.html" class="btn primary">Voir la procédure</a>
+      </div>
+
+      <div class="neon-card">
+        <h2>GLPI</h2>
+        <p>Installation, base MariaDB, tickets, inventaire.</p>
+        <a href="procedures/glpi.html" class="btn primary">Voir la procédure</a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 — I.Simona SANDOR — IT Support & Infrastructure
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="background-network.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
