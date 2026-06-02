@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Accueil — I.Simona SANDOR</title>
+  <title>Accueil — I. Simona SANDOR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="style.css" />
@@ -13,6 +13,7 @@
 </head>
 
 <body class="home-page">
+
   <!-- Fond 3D -->
   <canvas id="bg-grid"></canvas>
   <div class="overlay"></div>
@@ -21,26 +22,29 @@
   <header class="navbar">
     <div class="logo">SIS-art<span class="logo-dot">.</span></div>
     <nav>
-      <a href="index.html" class="active" data-icon="🏠">Accueil</a>
-      <a href="competences.html" data-icon="🧠">Compétences</a>
-      <a href="projets.html" data-icon="📁">Projets</a>
-      <a href="procedures.html" data-icon="📚">Procédures</a>
-      <a href="galerie.html" data-icon="🖼️">Galerie</a>
-      <a href="contact.html" data-icon="✉️">Contact</a>
+      <a href="index.html" class="active">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="procedures.html">Procédures</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <main class="hero">
 
-    <div class="photo-placeholder">Photo de Simona</div>
+    <!-- Poza de profil (opțională) -->
+    <div class="hero-photo-wrapper">
+      <img src="profil.jpg" alt="Photo de Simona" class="hero-photo">
+    </div>
 
-    <h1>I. Simona SANDOR</h1>
-    <h2>IT Support & Infrastructure — TSSR</h2>
+    <h1 class="hero-title">I. Simona <span>SANDOR</span></h1>
+    <p class="hero-subtitle">IT Support & Infrastructure — TSSR</p>
 
-    <p class="intro">
+    <p class="hero-intro">
       Passionnée par les systèmes, réseaux, déploiements automatisés et la cybersécurité,
-      je conçois et maintiens des environnements techniques fiables.
+      je conçois et maintiens des environnements techniques fiables, documentés et sécurisés.
     </p>
 
     <div class="hero-buttons">
@@ -58,5 +62,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
   <script src="background-grid.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
