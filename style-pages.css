@@ -94,3 +94,7 @@ body.windows-bg {
   background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
               url("../galerie/bg-windows.jpg") center/cover fixed;
 }
+body.linux-bg {
+  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+              url("../galerie/bg-linux.jpg") center/cover fixed;
+}
