@@ -90,3 +90,7 @@ body.page-interne {
     color: #6aa8ff;
     text-shadow: 0 0 6px #6aa8ff;
 }
+body.windows-bg {
+  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+              url("../galerie/bg-windows.jpg") center/cover fixed;
+}
