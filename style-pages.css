@@ -2,7 +2,7 @@
 
 body.page-interne {
   background: linear-gradient(rgba(10, 10, 20, 0.70), rgba(10, 10, 20, 0.70)),
-    url("images/fundal-holo2.jpg") center/cover fixed;
+    url("galerie/fundal-holo2.jpg") center/cover fixed;
   color: #f5f5f5;
   font-family: "Inter", sans-serif;
   margin: 0;
