@@ -40,17 +40,17 @@ body.page-interne {
 .card-competence {
   background: rgba(255, 255, 255, 0.90);
   backdrop-filter: blur(6px);
-  width: 100%;
-  max-width: 350px;
+  color: #1a1a1a;
+  border: 1px solid rgba(255,255,255,0.25);
   padding: 25px;
   border-radius: 14px;
-  box-shadow: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card-competence:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
 }
 
 .card-competence h2 {
