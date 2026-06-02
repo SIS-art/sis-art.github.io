@@ -79,3 +79,14 @@ body.page-interne {
   margin-top: 40px;
   color: #555;
 }
+.card-competence ul li a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.card-competence ul li a:hover {
+    color: #6aa8ff;
+    text-shadow: 0 0 6px #6aa8ff;
+}
