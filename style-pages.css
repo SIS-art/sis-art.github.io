@@ -49,10 +49,6 @@ body.page-interne {
 }
 
 .card-competence:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
-}
-.card-competence:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.18),
                 0 0 18px rgba(106,168,255,0.6);
