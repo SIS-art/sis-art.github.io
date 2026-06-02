@@ -128,8 +128,9 @@ h2 {
     opacity: 0.85;
 }
 
-.intro {
+.hero-intro {
     max-width: 600px;
+    margin: 0 auto;
     opacity: 0.9;
     line-height: 1.6;
 }
