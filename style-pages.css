@@ -207,3 +207,44 @@ body.alertes-bg {
 .sidebar.open {
   width: 260px;
 }
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10,10,20,0.85);
+    padding: 12px 0;
+    z-index: 3000;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(102,204,255,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #66ccff;
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 40px;
+    text-shadow: 0 0 10px #66ccff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 40px;
+}
+
+.navbar a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: 0 0 8px #66ccff;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #66ccff;
+    text-shadow: 0 0 12px #66ccff;
+}
