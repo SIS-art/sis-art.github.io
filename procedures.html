@@ -2,66 +2,162 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Procédure — Active Directory</title>
-    <link rel="stylesheet" href="../style-pages.css">
+    <title>Procédures — I.Simona SANDOR</title>
+    <link rel="stylesheet" href="style-pages.css">
+
+    <style>
+        body {
+            background: #0b0f19;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+        }
+
+        .procedures-container {
+            max-width: 1200px;
+            margin: 120px auto 60px;
+            padding: 0 20px;
+        }
+
+        .procedures-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            color: #8ab4ff;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px #8ab4ff;
+        }
+
+        .grid-procedures {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .proc-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: 0.3s ease;
+        }
+
+        .proc-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 20px rgba(138,180,255,0.4);
+        }
+
+        .proc-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #8ab4ff;
+            margin-bottom: 10px;
+        }
+
+        .proc-desc {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
+
+        .proc-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #8ab4ff;
+            color: #000;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .proc-btn:hover {
+            background: #bcd3ff;
+        }
+    </style>
 </head>
 
-<body class="page-interne windows-bg">
+<body>
 
-    <!-- NAVBAR SUS -->
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">SIS-art.</div>
         <ul>
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="../competences.html">Compétences</a></li>
-            <li><a href="../projets.html">Projets</a></li>
-            <li><a href="../procedures.html" class="active">Procédures</a></li>
-            <li><a href="../galerie.html">Galerie</a></li>
-            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="procedures.html" class="active">Procédures</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- SIDEBAR BUTTON -->
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="procedures-container">
+        <h1 class="procedures-title">Procédures Techniques</h1>
 
-    <!-- SIDEBAR -->
-    <div id="sidebar" class="sidebar">
-        <h2>Procédures</h2>
-        <a href="../procedures.html">Retour</a>
+        <div class="grid-procedures">
 
-        <h3>Windows Server</h3>
-        <a href="ad.html">Active Directory</a>
-        <a href="dns.html">DNS</a>
-        <a href="dhcp.html">DHCP</a>
-        <a href="gpo.html">GPO</a>
+            <div class="proc-card">
+                <h3 class="proc-title">Active Directory</h3>
+                <p class="proc-desc">Installation, domaine, utilisateurs, OU, GPO.</p>
+                <a href="procedures/ad.html" class="proc-btn">Voir la procédure</a>
+            </div>
 
-        <h3>Déploiement</h3>
-        <a href="mdt.html">WDS / MDT</a>
-        <a href="fog.html">FOG Project</a>
+            <div class="proc-card">
+                <h3 class="proc-title">DNS</h3>
+                <p class="proc-desc">Zones, enregistrements, résolution interne.</p>
+                <a href="procedures/dns.html" class="proc-btn">Voir la procédure</a>
+            </div>
 
-        <h3>Réseaux</h3>
-        <a href="vpn.html">VPN</a>
-        <a href="vlan.html">VLAN</a>
+            <div class="proc-card">
+                <h3 class="proc-title">DHCP</h3>
+                <p class="proc-desc">Scopes, réservations, options réseau.</p>
+                <a href="procedures/dhcp.html" class="proc-btn">Voir la procédure</a>
+            </div>
 
-        <h3>Supervision</h3>
-        <a href="zabbix.html">Zabbix</a>
-        <a href="glpi.html">GLPI</a>
+            <div class="proc-card">
+                <h3 class="proc-title">GPO</h3>
+                <p class="proc-desc">Stratégies, sécurité, déploiement.</p>
+                <a href="procedures/gpo.html" class="proc-btn">Voir la procédure</a>
+            </div>
+
+            <div class="proc-card">
+                <h3 class="proc-title">WDS / MDT</h3>
+                <p class="proc-desc">Déploiement Windows automatisé.</p>
+                <a href="procedures/mdt.html" class="proc-btn">Voir la procédure</a>
+            </div>
+
+            <div class="proc-card">
+                <h3 class="proc-title">FOG Project</h3>
+                <p class="proc-desc">Capture & déploiement d’images.</p>
+                <a href="procedures/fog.html" class="proc-btn">Voir la procédure</a>
+            </div>
+
+            <div class="proc-card">
+                <h3 class="proc-title">VPN</h3>
+                <p class="proc-desc">OpenVPN, WireGuard, certificats.</p>
+                <a href="procedures/vpn.html" class="proc-btn">Voir la procédure</a>
+            </div>
+
+            <div class="proc-card">
+                <h3 class="proc-title">VLAN</h3>
+                <p class="proc-desc">Segmentation réseau, routage.</p>
+                <a href="procedures/vlan.html" class="proc-btn">Voir la procédure</a>
+            </div>
+
+            <div class="proc-card">
+                <h3 class="proc-title">Zabbix</h3>
+                <p class="proc-desc">Supervision, agents, alertes.</p>
+                <a href="procedures/zabbix.html" class="proc-btn">Voir la procédure</a>
+            </div>
+
+            <div class="proc-card">
+                <h3 class="proc-title">GLPI</h3>
+                <p class="proc-desc">Tickets, inventaire, gestion IT.</p>
+                <a href="procedures/glpi.html" class="proc-btn">Voir la procédure</a>
+            </div>
+
+        </div>
     </div>
-
-    <!-- TITLU PAGINĂ -->
-    <h1 class="titre-page">Procédure — Active Directory</h1>
-
-    <!-- CONȚINUT PAGINĂ -->
-    <div class="content-interne">
-        <p>Conținutul procedurii îl adăugăm mai târziu.</p>
-    </div>
-
-    <!-- SCRIPT SIDEBAR -->
-    <script>
-        function toggleMenu() {
-            document.getElementById("sidebar").classList.toggle("open");
-        }
-    </script>
 
 </body>
 </html>
