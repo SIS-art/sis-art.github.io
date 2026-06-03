@@ -95,7 +95,7 @@ body.windows-bg {
               url("../galerie/bg-windows.jpg") center/cover fixed;
 }
 body.linux-bg {
-  background: linear-gradient(rgba(10,10,20,0.50), rgba(10,10,20,0.5)),
+  background: linear-gradient(rgba(10,10,20,0.50), rgba(10,10,20,0.50)),
               url("../galerie/bg-linux.jpg") center/cover fixed;
 }
 body.gpo-bg {
@@ -103,7 +103,7 @@ body.gpo-bg {
               url("../galerie/bg-gpo.jpg") center/cover fixed;
 }
 body.ps-bg {
-  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+  background: linear-gradient(rgba(10,10,20,0.50), rgba(10,10,20,0.50)),
               url("../galerie/bg-powershell.jpg") center/cover fixed;
 }
 
@@ -120,26 +120,26 @@ body.vpn-bg {
               url("../galerie/bg-vpn.jpg") center/cover fixed;
 }
 body.analyse-bg {
-  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+  background: linear-gradient(rgba(10,10,20,0.50), rgba(10,10,20,0.50)),
               url("../galerie/bg-analyse.jpg") center/cover fixed;
 }
 body.vmware-bg {
-  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+  background: linear-gradient(rgba(10,10,20,0.50), rgba(10,10,20,0.50)),
               url("../galerie/bg-vmware.jpg") center/cover fixed;
 }
 body.snap-bg {
-  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+  background: linear-gradient(rgba(10,10,20,0.50), rgba(10,10,20,0.50)),
               url("../galerie/bg-snapshots.jpg") center/cover fixed;
 }
 body.secu-bg {
-  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+  background: linear-gradient(rgba(10,10,20,0.50), rgba(10,10,20,0.50)),
               url("../galerie/bg-securisation.jpg") center/cover fixed;
 }
 body.acces-bg {
-  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+  background: linear-gradient(rgba(10,10,20,0.50), rgba(10,10,20,0.50)),
               url("../galerie/bg-acces.jpg") center/cover fixed;
 }
 body.alertes-bg {
-  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+  background: linear-gradient(rgba(10,10,20,0.50), rgba(10,10,20,0.50)),
               url("../galerie/bg-alertes.jpg") center/cover fixed;
 }
