@@ -111,3 +111,7 @@ body.vlan-bg {
   background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
               url("../galerie/bg-vlan.jpg") center/cover fixed;
 }
+body.switching-bg {
+  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+              url("../galerie/bg-switching.jpg") center/cover fixed;
+}
