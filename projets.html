@@ -2,69 +2,173 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>GPO – Systèmes</title>
+    <title>Projets — I.Simona SANDOR</title>
     <link rel="stylesheet" href="style-pages.css">
+
+    <style>
+        body {
+            background: #0b0f19;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            margin: 120px auto 60px;
+            padding: 0 20px;
+        }
+
+        .projects-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            color: #8ab4ff;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px #8ab4ff;
+        }
+
+        .grid-projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 20px rgba(138,180,255,0.4);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            filter: brightness(0.8);
+        }
+
+        .project-content {
+            padding: 18px;
+        }
+
+        .project-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #8ab4ff;
+        }
+
+        .project-desc {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
+
+        .project-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #8ab4ff;
+            color: #000;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .project-btn:hover {
+            background: #bcd3ff;
+        }
+    </style>
 </head>
 
-<body class="page-interne gpo-bg">
+<body>
 
-    <!-- NAVBAR SUS -->
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">SIS-art.</div>
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="competences.html">Compétences</a></li>
-            <li><a href="projets.html">Projets</a></li>
+            <li><a href="projets.html" class="active">Projets</a></li>
             <li><a href="procedures.html">Procédures</a></li>
             <li><a href="galerie.html">Galerie</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- SIDEBAR BUTTON -->
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="projects-container">
+        <h1 class="projects-title">Mes Projets</h1>
 
-    <!-- SIDEBAR -->
-    <div id="sidebar" class="sidebar">
-        <h2>Menu</h2>
-        <a href="index.html">Accueil</a>
+        <div class="grid-projects">
 
-        <h3>Systèmes</h3>
-        <a href="windows-server.html">Windows Server</a>
-        <a href="linux.html">Linux</a>
-        <a href="gpo.html">GPO</a>
-        <a href="powershell-bash.html">PowerShell & Bash</a>
+            <!-- PROJET 1 -->
+            <div class="project-card">
+                <img src="galerie/projet-ad.jpg" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">Active Directory + DNS + DHCP</h3>
+                    <p class="project-desc">Installation complète d’un domaine Windows Server avec gestion des utilisateurs, GPO, DNS interne et DHCP configuré.</p>
+                    <a href="windows-server.html" class="project-btn">Voir le projet</a>
+                </div>
+            </div>
 
-        <h3>Réseaux</h3>
-        <a href="vlan-routage-dhcp.html">VLAN / Routage / DHCP</a>
-        <a href="switching-firewall.html">Switching & Firewall</a>
-        <a href="vpn.html">VPN</a>
-        <a href="analyse-reseau.html">Analyse réseau</a>
+            <!-- PROJET 2 -->
+            <div class="project-card">
+                <img src="galerie/projet-mdt.jpg" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">Déploiement Windows — WDS / MDT</h3>
+                    <p class="project-desc">Serveur MDT, WinPE, Task Sequence, Unattend.xml et déploiement automatisé de Windows 11.</p>
+                    <a href="procedures.html" class="project-btn">Voir le projet</a>
+                </div>
+            </div>
 
-        <h3>Virtualisation</h3>
-        <a href="vmware.html">VMware Workstation</a>
-        <a href="snapshots-templates.html">Snapshots & Templates</a>
+            <!-- PROJET 3 -->
+            <div class="project-card">
+                <img src="galerie/projet-fog.jpg" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">FOG Project</h3>
+                    <p class="project-desc">Installation d’un serveur FOG sous Debian, capture d’image, PXE, configuration réseau et tests clients.</p>
+                    <a href="linux.html" class="project-btn">Voir le projet</a>
+                </div>
+            </div>
 
-        <h3>Cybersécurité</h3>
-        <a href="securisation-systemes.html">Sécurisation systèmes</a>
-        <a href="gestion-acces.html">Gestion des accès</a>
-        <a href="surveillance-alertes.html">Surveillance & alertes</a>
+            <!-- PROJET 4 -->
+            <div class="project-card">
+                <img src="galerie/projet-vpn.jpg" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">VPN — OpenVPN & WireGuard</h3>
+                    <p class="project-desc">Création d’un réseau sécurisé, certificats, routage et tests de connectivité.</p>
+                    <a href="vpn.html" class="project-btn">Voir le projet</a>
+                </div>
+            </div>
+
+            <!-- PROJET 5 -->
+            <div class="project-card">
+                <img src="galerie/projet-zabbix.jpg" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">Zabbix</h3>
+                    <p class="project-desc">Installation, agents, dashboards, alertes et supervision réseau/systèmes.</p>
+                    <a href="surveillance-alertes.html" class="project-btn">Voir le projet</a>
+                </div>
+            </div>
+
+            <!-- PROJET 6 -->
+            <div class="project-card">
+                <img src="galerie/projet-glpi.jpg" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-title">GLPI</h3>
+                    <p class="project-desc">Installation complète, base MariaDB, tickets, inventaire et accès web.</p>
+                    <a href="gestion-acces.html" class="project-btn">Voir le projet</a>
+                </div>
+            </div>
+
+        </div>
     </div>
-
-    <!-- TITLU PAGINĂ -->
-    <h1 class="titre-page">GPO</h1>
-
-    <!-- CONȚINUT PAGINĂ -->
-    <div class="content-interne">
-        <p>Conținutul îl adăugăm mai târziu.</p>
-    </div>
-
-    <!-- SCRIPT SIDEBAR -->
-    <script>
-        function toggleMenu() {
-            document.getElementById("sidebar").classList.toggle("open");
-        }
-    </script>
 
 </body>
 </html>
