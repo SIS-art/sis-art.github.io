@@ -146,7 +146,7 @@ body.alertes-bg {
 /* SIDEBAR BUTTON */
 .menu-btn {
   position: fixed;
-  top: 20px;
+  top: 90px;
   left: 20px;
   font-size: 32px;
   color: #66ccff;
@@ -168,7 +168,7 @@ body.alertes-bg {
   height: 100%;
   width: 0;
   position: fixed;
-  top: 0;
+  top: 70;
   left: 0;
   background: rgba(10, 10, 20, 0.92);
   overflow-x: hidden;
