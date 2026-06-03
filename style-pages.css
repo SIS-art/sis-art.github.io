@@ -123,3 +123,7 @@ body.analyse-bg {
   background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
               url("../galerie/bg-analyse.jpg") center/cover fixed;
 }
+body.vmware-bg {
+  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+              url("../galerie/bg-vmware.jpg") center/cover fixed;
+}
