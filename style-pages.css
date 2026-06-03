@@ -131,3 +131,7 @@ body.snap-bg {
   background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
               url("../galerie/bg-snapshots.jpg") center/cover fixed;
 }
+body.secu-bg {
+  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+              url("../galerie/bg-securisation.jpg") center/cover fixed;
+}
