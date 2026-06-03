@@ -2,85 +2,69 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Projets — I.Simona SANDOR</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animations.css">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <title>GPO – Systèmes</title>
+    <link rel="stylesheet" href="style-pages.css">
 </head>
 
-<body class="projects-page">
+<body class="page-interne gpo-bg">
 
-    <!-- Fond 3D réseau -->
-    <canvas id="bg-network"></canvas>
-    <div class="overlay"></div>
+    <!-- NAVBAR SUS -->
+    <nav class="navbar">
+        <div class="logo">SIS-art.</div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="procedures.html">Procédures</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo">SIS-art<span class="logo-dot">.</span></div>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="competences.html">Compétences</a>
-            <a href="projets.html" class="active">Projets</a>
-            <a href="procedures.html">Procédures</a>
-            <a href="galerie.html">Galerie</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <!-- SIDEBAR BUTTON -->
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
-    <main class="content">
-        <h1 class="page-title glitch">Mes Projets</h1>
+    <!-- SIDEBAR -->
+    <div id="sidebar" class="sidebar">
+        <h2>Menu</h2>
+        <a href="index.html">Accueil</a>
 
-        <section class="projects-grid">
+        <h3>Systèmes</h3>
+        <a href="windows-server.html">Windows Server</a>
+        <a href="linux.html">Linux</a>
+        <a href="gpo.html">GPO</a>
+        <a href="powershell-bash.html">PowerShell & Bash</a>
 
-            <div class="project-card neon-card">
-                <h2>Active Directory + DNS + DHCP</h2>
-                <p>Installation complète d’un domaine Windows Server avec gestion des utilisateurs, GPO, DNS interne et DHCP configuré.</p>
-                <a class="btn" href="windows-server.html">Voir le projet</a>
-            </div>
+        <h3>Réseaux</h3>
+        <a href="vlan-routage-dhcp.html">VLAN / Routage / DHCP</a>
+        <a href="switching-firewall.html">Switching & Firewall</a>
+        <a href="vpn.html">VPN</a>
+        <a href="analyse-reseau.html">Analyse réseau</a>
 
-            <div class="project-card neon-card">
-                <h2>Déploiement Windows — WDS / MDT</h2>
-                <p>Création d’un serveur MDT, configuration de WinPE, Task Sequence, Unattend.xml et déploiement automatisé de Windows 11.</p>
-                <a class="btn" href="procedures.html">Voir le projet</a>
-            </div>
+        <h3>Virtualisation</h3>
+        <a href="vmware.html">VMware Workstation</a>
+        <a href="snapshots-templates.html">Snapshots & Templates</a>
 
-            <div class="project-card neon-card">
-                <h2>FOG Project</h2>
-                <p>Installation d’un serveur FOG sous Debian, capture d’image, déploiement PXE, configuration réseau et tests clients.</p>
-                <a class="btn" href="linux.html">Voir le projet</a>
-            </div>
+        <h3>Cybersécurité</h3>
+        <a href="securisation-systemes.html">Sécurisation systèmes</a>
+        <a href="gestion-acces.html">Gestion des accès</a>
+        <a href="surveillance-alertes.html">Surveillance & alertes</a>
+    </div>
 
-            <div class="project-card neon-card">
-                <h2>VPN — OpenVPN & WireGuard</h2>
-                <p>Création d’un réseau sécurisé, configuration serveur/client, certificats, routage et tests de connectivité.</p>
-                <a class="btn" href="vpn.html">Voir le projet</a>
-            </div>
+    <!-- TITLU PAGINĂ -->
+    <h1 class="titre-page">GPO</h1>
 
-            <div class="project-card neon-card">
-                <h2>Zabbix</h2>
-                <p>Installation, configuration des agents, création de dashboards, alertes et supervision réseau/systèmes.</p>
-                <a class="btn" href="surveillance-alertes.html">Voir le projet</a>
-            </div>
+    <!-- CONȚINUT PAGINĂ -->
+    <div class="content-interne">
+        <p>Conținutul îl adăugăm mai târziu.</p>
+    </div>
 
-            <div class="project-card neon-card">
-                <h2>GLPI</h2>
-                <p>Installation complète, base MariaDB, configuration des entités, tickets, inventaire et accès web.</p>
-                <a class="btn" href="gestion-acces.html">Voir le projet</a>
-            </div>
-
-        </section>
-    </main>
-
-    <footer class="footer">
-        <span>© 2026 — I.Simona SANDOR — IT Support & Infrastructure</span>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
-    <script src="background-network.js"></script>
-    <script src="script.js"></script>
+    <!-- SCRIPT SIDEBAR -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("open");
+        }
+    </script>
 
 </body>
 </html>
