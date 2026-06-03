@@ -2,17 +2,24 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>PowerShell & Bash</title>
-    <link rel="stylesheet" href="../style-pages.css">
+    <title>PowerShell & Bash – Systèmes</title>
+    <link rel="stylesheet" href="style-pages.css">
 </head>
 
-<body class="page-interne powershell-bg">
+<body class="page-interne ps-bg">
 
-    <h1 class="titre-page">PowerShell & Bash</h1>
-
-    <div class="content-interne">
-        <p>Continutul îl adăugăm mai târziu.</p>
-    </div>
+    <!-- NAVBAR SUS -->
+    <nav class="navbar">
+        <div class="logo">SIS-art.</div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="procedures.html">Procédures</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- SIDEBAR BUTTON -->
     <div class="menu-btn" onclick="toggleMenu()">☰</div>
@@ -20,32 +27,39 @@
     <!-- SIDEBAR -->
     <div id="sidebar" class="sidebar">
         <h2>Menu</h2>
-        <a href="../index.html">Accueil</a>
+        <a href="index.html">Accueil</a>
 
         <h3>Systèmes</h3>
-        <a href="../windows-server.html">Windows Server</a>
-        <a href="../linux.html">Linux</a>
-        <a href="../gpo.html">GPO</a>
-        <a href="../powershell.html">PowerShell & Bash</a>
+        <a href="windows-server.html">Windows Server</a>
+        <a href="linux.html">Linux</a>
+        <a href="gpo.html">GPO</a>
+        <a href="powershell.html">PowerShell & Bash</a>
 
         <h3>Réseaux</h3>
-        <a href="../vlan-routing.html">VLAN / Routage / DHCP</a>
-        <a href="../switching-firewall.html">Switching & Firewall</a>
-        <a href="../vpn.html">VPN</a>
-        <a href="../analyse-reseau.html">Analyse réseau</a>
+        <a href="vlan-routage-dhcp.html">VLAN / Routage / DHCP</a>
+        <a href="switching-firewall.html">Switching & Firewall</a>
+        <a href="vpn.html">VPN</a>
+        <a href="analyse-reseau.html">Analyse réseau</a>
 
         <h3>Virtualisation</h3>
-        <a href="../vmware.html">VMware Workstation</a>
-        <a href="../snapshots-templates.html">Snapshots & Templates</a>
+        <a href="vmware.html">VMware Workstation</a>
+        <a href="snapshots-templates.html">Snapshots & Templates</a>
 
         <h3>Cybersécurité</h3>
-        <a href="../securisation-systemes.html">Sécurisation systèmes</a>
-        <a href="../gestion-acces.html">Gestion des accès</a>
-        <a href="../surveillance-alertes.html">Surveillance & alertes</a>
+        <a href="securisation-systemes.html">Sécurisation systèmes</a>
+        <a href="gestion-acces.html">Gestion des accès</a>
+        <a href="surveillance-alertes.html">Surveillance & alertes</a>
     </div>
 
-    
-    <!-- JAVASCRIPT -->
+    <!-- TITLU PAGINĂ -->
+    <h1 class="titre-page">PowerShell & Bash</h1>
+
+    <!-- CONȚINUT PAGINĂ -->
+    <div class="content-interne">
+        <p>Conținutul îl adăugăm mai târziu.</p>
+    </div>
+
+    <!-- SCRIPT SIDEBAR -->
     <script>
         function toggleMenu() {
             document.getElementById("sidebar").classList.toggle("open");
