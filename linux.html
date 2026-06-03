@@ -2,18 +2,55 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Linux (Debian, Ubuntu)</title>
+    <title>Linux</title>
     <link rel="stylesheet" href="../style-pages.css">
 </head>
 
 <body class="page-interne linux-bg">
 
-    <h1 class="titre-page">Linux (Debian, Ubuntu)</h1>
+    <!-- SIDEBAR BUTTON -->
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <!-- SIDEBAR -->
+    <div id="sidebar" class="sidebar">
+        <h2>Menu</h2>
+        <a href="../index.html">Accueil</a>
+
+        <h3>Systèmes</h3>
+        <a href="../competences/windows-server.html">Windows Server</a>
+        <a href="../competences/linux.html">Linux</a>
+        <a href="../competences/gpo.html">GPO</a>
+        <a href="../competences/powershell-bash.html">PowerShell & Bash</a>
+
+        <h3>Réseaux</h3>
+        <a href="../competences/vlan-routing.html">VLAN / Routage / DHCP</a>
+        <a href="../competences/switching-firewall.html">Switching & Firewall</a>
+        <a href="../competences/vpn.html">VPN</a>
+        <a href="../competences/analyse-reseau.html">Analyse réseau</a>
+
+        <h3>Virtualisation</h3>
+        <a href="../competences/vmware.html">VMware Workstation</a>
+        <a href="../competences/snapshots-templates.html">Snapshots & Templates</a>
+
+        <h3>Cybersécurité</h3>
+        <a href="../competences/securisation-systemes.html">Sécurisation systèmes</a>
+        <a href="../competences/gestion-acces.html">Gestion des accès</a>
+        <a href="../competences/surveillance-alertes.html">Surveillance & alertes</a>
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <h1 class="titre-page">Linux</h1>
 
     <div class="content-interne">
         <p>Continutul îl adăugăm mai târziu.</p>
     </div>
 
+    <!-- JAVASCRIPT -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("open");
+        }
+    </script>
+
 </body>
 </html>
-
