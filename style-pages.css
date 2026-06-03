@@ -107,3 +107,7 @@ body.ps-bg {
               url("../galerie/bg-powershell.jpg") center/cover fixed;
 }
 
+body.vlan-bg {
+  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+              url("../galerie/bg-vlan.jpg") center/cover fixed;
+}
