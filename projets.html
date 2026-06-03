@@ -1,98 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Projets — I.Simona SANDOR</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>Projets — I.Simona SANDOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="animations.css" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 
 <body class="projects-page">
-  <!-- Fond 3D -->
-  <canvas id="bg-network"></canvas>
-  <div class="overlay"></div>
 
-  <!-- NAVBAR PREMIUM -->
-  <header class="navbar">
-    <div class="logo">SIS-art<span class="logo-dot">.</span></div>
-    <nav>
-      <a href="index.html" data-icon="🏠">Accueil</a>
-      <a href="competences.html" data-icon="🧠">Compétences</a>
-      <a href="projets.html" class="active" data-icon="📁">Projets</a>
-      <a href="procedures.html" data-icon="📚">Procédures</a>
-      <a href="galerie.html" data-icon="🖼️">Galerie</a>
-      <a href="contact.html" data-icon="✉️">Contact</a>
-    </nav>
-  </header>
+    <!-- Fond 3D réseau -->
+    <canvas id="bg-network"></canvas>
+    <div class="overlay"></div>
 
-  <main class="content">
-    <h1 class="page-title">Mes Projets</h1>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">SIS-art<span class="logo-dot">.</span></div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="competences.html">Compétences</a>
+            <a href="projets.html" class="active">Projets</a>
+            <a href="procedures.html">Procédures</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <section class="projects-grid">
+    <main class="content">
+        <h1 class="page-title glitch">Mes Projets</h1>
 
-      <!-- AD DS -->
-      <div class="neon-card">
-        <h2>Active Directory + DNS + DHCP</h2>
-        <p>Installation complète d’un domaine Windows Server avec gestion des utilisateurs, GPO, DNS interne et DHCP configuré.</p>
-        <a href="procedures/ad.html" class="btn primary">Voir la procédure</a>
-        <a href="galerie.html#ad" class="btn secondary">Voir les preuves</a>
-      </div>
+        <section class="projects-grid">
 
-      <!-- MDT / WDS -->
-      <div class="neon-card">
-        <h2>Déploiement Windows — WDS / MDT</h2>
-        <p>Création d’un serveur MDT, configuration de WinPE, Task Sequence, Unattend.xml et déploiement automatisé de Windows 11.</p>
-        <a href="procedures/mdt.html" class="btn primary">Voir la procédure</a>
-        <a href="galerie.html#mdt" class="btn secondary">Voir les preuves</a>
-      </div>
+            <div class="project-card neon-card">
+                <h2>Active Directory + DNS + DHCP</h2>
+                <p>Installation complète d’un domaine Windows Server avec gestion des utilisateurs, GPO, DNS interne et DHCP configuré.</p>
+                <a class="btn" href="windows-server.html">Voir le projet</a>
+            </div>
 
-      <!-- FOG -->
-      <div class="neon-card">
-        <h2>FOG Project</h2>
-        <p>Installation d’un serveur FOG sous Debian, capture d’image, déploiement PXE, configuration réseau et tests clients.</p>
-        <a href="procedures/fog.html" class="btn primary">Voir la procédure</a>
-        <a href="galerie.html#fog" class="btn secondary">Voir les preuves</a>
-      </div>
+            <div class="project-card neon-card">
+                <h2>Déploiement Windows — WDS / MDT</h2>
+                <p>Création d’un serveur MDT, configuration de WinPE, Task Sequence, Unattend.xml et déploiement automatisé de Windows 11.</p>
+                <a class="btn" href="procedures.html">Voir le projet</a>
+            </div>
 
-      <!-- VPN -->
-      <div class="neon-card">
-        <h2>VPN — OpenVPN & WireGuard</h2>
-        <p>Création d’un réseau sécurisé, configuration serveur/client, certificats, routage et tests de connectivité.</p>
-        <a href="procedures/vpn.html" class="btn primary">Voir la procédure</a>
-        <a href="galerie.html#vpn" class="btn secondary">Voir les preuves</a>
-      </div>
+            <div class="project-card neon-card">
+                <h2>FOG Project</h2>
+                <p>Installation d’un serveur FOG sous Debian, capture d’image, déploiement PXE, configuration réseau et tests clients.</p>
+                <a class="btn" href="linux.html">Voir le projet</a>
+            </div>
 
-      <!-- Zabbix -->
-      <div class="neon-card">
-        <h2>Zabbix</h2>
-        <p>Installation, configuration des agents, création de dashboards, alertes et supervision réseau/systèmes.</p>
-        <a href="procedures/zabbix.html" class="btn primary">Voir la procédure</a>
-        <a href="galerie.html#zabbix" class="btn secondary">Voir les preuves</a>
-      </div>
+            <div class="project-card neon-card">
+                <h2>VPN — OpenVPN & WireGuard</h2>
+                <p>Création d’un réseau sécurisé, configuration serveur/client, certificats, routage et tests de connectivité.</p>
+                <a class="btn" href="vpn.html">Voir le projet</a>
+            </div>
 
-      <!-- GLPI -->
-      <div class="neon-card">
-        <h2>GLPI</h2>
-        <p>Installation complète, base MariaDB, configuration des entités, tickets, inventaire et accès web.</p>
-        <a href="procedures/glpi.html" class="btn primary">Voir la procédure</a>
-        <a href="galerie.html#glpi" class="btn secondary">Voir les preuves</a>
-      </div>
+            <div class="project-card neon-card">
+                <h2>Zabbix</h2>
+                <p>Installation, configuration des agents, création de dashboards, alertes et supervision réseau/systèmes.</p>
+                <a class="btn" href="surveillance-alertes.html">Voir le projet</a>
+            </div>
 
-    </section>
-<main class="page-container">
+            <div class="project-card neon-card">
+                <h2>GLPI</h2>
+                <p>Installation complète, base MariaDB, configuration des entités, tickets, inventaire et accès web.</p>
+                <a class="btn" href="gestion-acces.html">Voir le projet</a>
+            </div>
 
-  <footer class="footer">
-    © 2026 — I.Simona SANDOR — IT Support & Infrastructure
-  </footer>
+        </section>
+    </main>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
-  <script src="background-network.js"></script>
-  <script src="script.js"></script>
+    <footer class="footer">
+        <span>© 2026 — I.Simona SANDOR — IT Support & Infrastructure</span>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+    <script src="background-network.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
