@@ -143,3 +143,67 @@ body.alertes-bg {
   background: linear-gradient(rgba(10,10,20,0.50), rgba(10,10,20,0.50)),
               url("../galerie/bg-alertes.jpg") center/cover fixed;
 }
+/* SIDEBAR BUTTON */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 32px;
+  color: #66ccff;
+  cursor: pointer;
+  z-index: 2000;
+  background: rgba(0,0,0,0.4);
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+  text-shadow: 0 0 10px #66ccff;
+}
+
+.menu-btn:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+/* SIDEBAR */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(10, 10, 20, 0.92);
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+  z-index: 1999;
+  backdrop-filter: blur(6px);
+  border-right: 1px solid rgba(102,204,255,0.4);
+}
+
+/* TITLURI NEON */
+.sidebar h2, .sidebar h3 {
+  color: #66ccff;
+  margin-left: 20px;
+  text-shadow: 0 0 12px #66ccff;
+}
+
+/* LINKURI */
+.sidebar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff; /* ALB pentru lizibilitate */
+  display: block;
+  transition: 0.3s;
+  text-shadow: 0 0 6px rgba(0,0,0,0.8);
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.1);
+  color: #66ccff; /* CYAN NEON */
+  text-shadow: 0 0 10px #66ccff;
+}
+
+/* WHEN SIDEBAR IS OPEN */
+.sidebar.open {
+  width: 260px;
+}
