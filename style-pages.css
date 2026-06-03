@@ -1,7 +1,7 @@
 /* ====== PAGINI INTERNE ====== */
 
 body.page-interne {
-  background: linear-gradient(rgba(10, 10, 20, 0.70), rgba(10, 10, 20, 0.70)),
+  background: linear-gradient(rgba(10, 10, 20, 0.55), rgba(10, 10, 20, 0.55)),
     url("fundal-holo2.jpg") center/cover fixed;
   color: #f5f5f5;
   font-family: "Inter", sans-serif;
@@ -91,11 +91,11 @@ body.page-interne {
     text-shadow: 0 0 6px #6aa8ff;
 }
 body.windows-bg {
-  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+  background: linear-gradient(rgba(10,10,20,0.55), rgba(10,10,20,0.55)),
               url("../galerie/bg-windows.jpg") center/cover fixed;
 }
 body.linux-bg {
-  background: linear-gradient(rgba(10,10,20,0.70), rgba(10,10,20,0.70)),
+  background: linear-gradient(rgba(10,10,20,0.55), rgba(10,10,20,0.55)),
               url("../galerie/bg-linux.jpg") center/cover fixed;
 }
 body.gpo-bg {
